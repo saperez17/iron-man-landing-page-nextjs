@@ -1,0 +1,86 @@
+.container {
+  height: 90vh;
+  width: 100%;
+  background: linear-gradient(
+    134.83deg,
+    #cc3332 17.21%,
+    #ffcc33 121.73%,
+    #bdbafa 121.73%
+  );
+  box-shadow: 2px 3px 5px rgba(255, 255, 255, 0.157043);
+  border-radius: 3.125px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::after {
+  content: "";
+  width: 800px;
+  height: 60px;
+  z-index: 20;
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  bottom: -60px;
+  transform: rotate(8deg);
+  overflow: hidden;
+  left: -8px;
+}
+
+.headerContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.descriptionContainer {
+  width: 80%;
+  text-align: center;
+}
+
+.descriptionText {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.headerTitle {
+  font-size: 36px;
+  color: white;
+  margin: 25px 0 0 20px;
+}
+@media only screen and (min-width: 992px) {
+  .container::after {
+    bottom: -80px;
+    width: calc(100vw + 40px);
+    height: 150px;
+    left: -24px;
+    transform: rotate(4deg);
+  }
+
+  .characterHeaderImage {
+    height: 560pxx;
+    width: 409px;
+    image-rendering: optimizeQuality;
+  }
+
+  .headerContentContainer {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    padding: 0 14rem 0 0;
+  }
+
+  .descriptionContainer {
+    padding: 0 8rem;
+  }
+  .descriptionText {
+    font-size: 24px;
+  }
+
+  .characterHeaderCta {
+    font-size: 24px;
+  }
+}

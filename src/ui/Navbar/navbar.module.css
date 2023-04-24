@@ -1,0 +1,33 @@
+.nav {
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+}
+
+.nav {
+  position: absolute;
+  z-index: 10;
+}
+
+.navList {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  padding: 24px;
+}
+
+.navListItem {
+  margin-right: 16px;
+}
+
+.navBarButton {
+  border-radius: 3px;
+  padding: 12px 30px;
+  color: white;
+}
+
+.signUpButton {
+  background-color: #f4bc00;
+  font-size: 16px;
+}

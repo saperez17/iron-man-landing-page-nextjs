@@ -1,0 +1,53 @@
+.container {
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.mainImage {
+  margin: 0 auto;
+}
+
+.DescriptionSectionContainer {
+  padding: 2rem 28px;
+}
+
+.DescriptionSectionItem {
+  margin-bottom: 20px;
+}
+.DescriptionSectionItemText {
+  margin-top: 54px;
+  color: #808080;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media only screen and (min-width: 992px) {
+  .DescriptionSectionItemText {
+    font-size: 16px;
+  }
+
+  .DescriptionSectionItem {
+    width: 80%;
+    /* padding: 0 6rem; */
+  }
+
+  .mainImage {
+    width: 471px;
+    height: 471px;
+  }
+
+  .container {
+    display: flex;
+    padding: 4rem 4rem;
+    gap: 4rem;
+  }
+
+  .DescriptionSectionContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+  }
+}

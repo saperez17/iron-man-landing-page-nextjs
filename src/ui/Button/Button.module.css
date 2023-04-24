@@ -1,0 +1,12 @@
+.button {
+  border-radius: 3px;
+  padding: 12px 30px;
+  color: white;
+}
+
+.primaryButton {
+  background-color: #f4bc00;
+  font-size: 16px;
+  box-shadow: 2px 3px 5px rgba(255, 255, 255, 0.157043);
+  border-radius: 3.125px;
+}
